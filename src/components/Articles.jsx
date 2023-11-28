@@ -34,10 +34,10 @@ const Articles = () => {
   ]
 
   return (
-    <div className='w-screen h-fit px-32 py-40 bg-w '>
+    <div className='w-screen h-fit px-32 py-40 bg-w  max-[640px]:px-8 max-[640px]:py-24 max-[640px]:text-center'>
       <h1 className='text-4xl font-light leading-snug text-navy mb-8'>Latest Articles  </h1>
 
-      <div className='w-full flex '>
+      <div className='w-full flex max-[640px]:flex-col'>
         {
           articleList.map((item) => {
             return (
@@ -55,11 +55,11 @@ export default Articles
 
 const Article = ({icon, author, title, desc }) => {
   return (
-    <div className='w-1/4 pr-6 min-h-full'>
+    <div className='w-1/4 pr-6 min-h-full max-[640px]:w-full max-[640px]:pr-0 max-[640px]:mb-10'>
       <div className='w-full bg-white rounded-md overflow-hidden min-h-full'>
         {icon}
         
-        <div className='w-full px-4 py-6'>
+        <div className='w-full px-4 py-6 max-[640px]:text-left'>
           <span className='text-xs text-grey'>By {author}</span>
           <h3 className='text-md leading-snug text-navy w-5/6 my-2'>{title}</h3>
           <p className='text-xs text-grey leading-relaxed font-medium w-11/12'>{desc}</p>

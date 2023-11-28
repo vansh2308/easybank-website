@@ -32,14 +32,14 @@ const Features = () => {
      
   ]
   return (
-    <div className='w-screen h-fit px-32 py-36 bg-wd relative'>
+    <div className='w-screen h-fit px-32 py-36 bg-wd relative max-[640px]:px-8 max-[640px]:text-center max-[640px]:py-24'>
       <h1 className='text-4xl font-light leading-snug text-navy mb-8'> Why choose EasyBank? </h1>
-      <p className='text-grey font-normal text-md w-1/2 mb-12 '>
+      <p className='text-grey font-normal text-md w-1/2 mb-12 max-[640px]:w-full '>
         We leverage Open Banking to turn your bank account into your financial hub. <br />
         Control your finances like never before.
       </p>
 
-      <div className='w-full flex'>
+      <div className='w-full flex max-[640px]:flex-col'>
         {
           featureList.map((item) => {
             return(
@@ -56,7 +56,7 @@ export default Features
 
 const FeatureTile = ({icon, title, desc}) => {
   return (
-    <div className='flex flex-col w-1/4 pr-6'>
+    <div className='flex flex-col w-1/4 pr-6 max-[640px]:w-full max-[640px]:items-center max-[640px]:mt-12'>
       {/* <img src={iconOnboarding} className='aspect-square w-16 mb-8' /> */}
       {icon}
       <h3 className='text-xl  leading-snug text-navy mb-8'>{title}  </h3>

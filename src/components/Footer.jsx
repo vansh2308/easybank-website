@@ -8,20 +8,20 @@ import instagram from "./../assets/icon-instagram.svg"
 
 const Footer = () => {
   return (
-    <div className='h-fit px-32 py-14 w-screen bg-navy flex justify-between'>
-      <div className='flex'>
-        <div className='flex flex-col justify-between mr-14'>
-          <img src={logo} alt='logo' className='text-white' />
-          <div className='flex'>
-            <button> <img src={facebook} className='w-4 mr-2' /> </button>
-            <button> <img src={youtube} className='w-4 mr-2' /> </button>
-            <button> <img src={twitter} className='w-4 mr-2' /> </button>
-            <button> <img src={pinterest} className='w-4 mr-2' /> </button>
-            <button> <img src={instagram} className='w-4 mr-2' /> </button>
+    <div className='h-fit px-32 py-14 w-screen bg-navy flex justify-between max-[640px]:flex-col max-[640px]:text-center max-[640px]:px-8 max-[640px]:items-center'>
+      <div className='flex max-[640px]:flex-col max-[640px]:items-center'>
+        <div className='flex flex-col justify-between mr-14 max-[640px]:mr-0'>
+          <img src={logo} alt='logo' className='text-white max-[640px]:mb-4' />
+          <div className='flex max-[640px]:my-6'>
+            <button> <img src={facebook} className='w-4 max-[640px]:w-6 max-[640px]:mr-4 mr-2' /> </button>
+            <button> <img src={youtube} className='w-4 max-[640px]:w-6 max-[640px]:mr-4 mr-2' /> </button>
+            <button> <img src={twitter} className='w-4 max-[640px]:w-6 max-[640px]:mr-4 mr-2' /> </button>
+            <button> <img src={pinterest} className='w-4 max-[640px]:w-6 max-[640px]:mr-4 mr-2' /> </button>
+            <button> <img src={instagram} className='w-4 max-[640px]:w-6 max-[640px]:mr-4 mr-2' /> </button>
           </div>
         </div>
 
-        <div className='grid-2-3 text-white text-xs font-thin mr-10'>
+        <div className='grid-2-3 text-white text-xs font-thin mr-10 max-[640px]:mr-0'>
           <button>About Us</button>
           <button>Contact</button>
           <button>Blog</button>
